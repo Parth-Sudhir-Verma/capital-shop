@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CapitalShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <!-- Add this in your <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+</head>
+
+<body>
+  <div class="container p-2 fs-6 d-flex d-lg-flex d-none" style="justify-content: space-between;">
+    <div class="row">
+      <div>
+        <ul class=" navbar-nav list-group-horizontal " style="gap: 40px;">
+          <li class="nav-item ">
+            <a class="nav-link active hovtab" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">Privacy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <ul class="navbar-nav list-group-horizontal" style="gap: 20px;">
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">My Wishlist</a>
+          </li>
+          <li class="nav-item"
+            style="border-left: 2px solid lightgray; border-right: 2px solid lightgray;padding-left: 5px;padding-right: 5px;">
+            <a class="nav-link hovtab" href="#">Track Your Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="images/facebook (1).png" height="18px" width="18px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="images/instagram_1077042 (1).png" height="18px" width="18px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="images/twitter.png" height="18px" width="18px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="images/whatsapp.png" height="18px" width="18px">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <img src="images/youtube.png" height="18px" width="18px">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr width="100%" size="2" color="lightgray" style="margin: 0;">
+  <nav class="p-2 navbar navbar-expand-lg bg-body-light ">
+    <div class="container-fluid  ">
+      <a class="navbar-brand fs-3" href="#">
+        <img src="/images/darklogo.png" alt="Logo" width="45" height="40"
+          class=" d-inline-block align-text-top">&nbsp<strong>Capital</strong> Shop</a>
+      <button style="border: none;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center fs-6 fw-bold" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="gap: 35px;">
+          <li class="nav-item ">
+            <a class="nav-link hovtab " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="#">Baby Collection</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hovtab" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hovtab" href="login.html">Log In</a></li>
+              <li><a class="dropdown-item hovtab" href="#">Cart</a></li>
+              <li><a class="dropdown-item hovtab" href="#">Product Details</a></li>
+              <li><a class="dropdown-item hovtab" href="#">Product Check Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown hovtab" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item hovtab" href="#">Blog</a></li>
+              <li><a class="dropdown-item hovtab" href="#">Element</a></li>
+              <li><a class="dropdown-item hovtab" href="#">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hovtab" href="contact.html">Contact Us</a>
+          </li>
+          </li>
+          <li class="d-flex d-lg-none d-sm-flex">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </li>
+          <ul class="navbar-nav d-flex d-none d-lg-flex" style="gap: 10px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown hovtab" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/images/search icon.png" class="hovtab" height="35px" width="35px">
+              </a>
+              <ul class="dropdown-menu" style="width: 250px;">
+                <li><a class="dropdown-item hovtab" href="#">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <img src="/images/user.png" height="35px" width="35px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="/images/shopping-cart.png" height="35px" width="35px">
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="p-2 container-fluid text-center bg-dark " style="color: white;">
+    <div class="row align-item-center ">
+      <p style="margin: 0;">Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer &nbsp<a href="#"
+          class="hovtab" style="color: darkgoldenrod;">Shop Now</a></p>
+    </div>
+  </div>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/men.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/women.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 col-md-12 mt-3 mr-2 position-relative text-center">
+        <img src="images/men fashion.jpg" height="250" class="w-100" style="object-fit:cover; border-radius:5px;">
+        <div class="image-overlay-text">
+          Mens Collection
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 mt-3 mr-2 position-relative text-center">
+        <img src="images/women fashion.jpg" height="250" class="w-100" style="object-fit:cover;border-radius:5px;">
+        <div class="image-overlay-text">
+          Womens Collection
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-12 mt-3 mr-2 position-relative text-center">
+        <img src="images/kids fashion.jpg" height="250" class="w-100" style="object-fit:cover;border-radius:5px;">
+        <div class="image-overlay-text">
+          Kids Collection
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-4 container">
+    <div class="row justify-content-between">
+      <div class="col-xl-12">
+        <div class="nav-button">
+          <nav>
+            <h2 class="fw-bold ">Trending This Week</h2>
+
+            <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+              <a class="nav-link active custom-tab" id="nav-one-tab" data-bs-toggle="tab" href="#nav-one" role="tab"
+                aria-controls="nav-one" aria-selected="true">Men</a>
+              <a class="nav-link custom-tab" id="nav-two-tab" data-bs-toggle="tab" href="#nav-two" role="tab"
+                aria-controls="nav-two" aria-selected="false">Women</a>
+              <a class="nav-link custom-tab" id="nav-three-tab" data-bs-toggle="tab" href="#nav-three" role="tab"
+                aria-controls="nav-three" aria-selected="false">Kids</a>
+              <a class="nav-link custom-tab" id="nav-four-tab" data-bs-toggle="tab" href="#nav-four" role="tab"
+                aria-controls="nav-four" aria-selected="false">Fashion</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+      <div class="container my-5">
+        <div class="my-slider-one">
+          <div><img src="images/men.jpg" class="img-fluid rounded" alt="Men">
+            <P class="text-center"><strong>Leather Jacket</strong><br>&#8377 4000 &nbsp <a class="txt">&#8377 7000</a>
+          </div>
+          <div><img src="images/menjoggers.jpg" class="img-fluid rounded" alt="Women">
+            <P class="text-center"><strong>Cotton Jogger Jackets</strong><br>&#8377 2000 &nbsp <a class="txt">&#8377
+                6000</a>
+          </div>
+          <div><img src="images/menclothes.jpg" class="img-fluid rounded" alt="Kids">
+            <P class="text-center"><strong>Party Jacket</strong><br>&#8377 3000 &nbsp <a class="txt">&#8377 5000</a>
+          </div>
+          <div><img src="images/men fashion.jpg" class="img-fluid rounded" alt="Men Fashion">
+            <P class="text-center"><strong>Combo mens apperal</strong><br>&#8377 8000 &nbsp <a class="txt">&#8377
+                12000</a>
+          </div>
+          <div><img src="images/mensuit.jpg" class="img-fluid rounded" alt="Women Fashion">
+            <P class="text-center"><strong>Formal Suit</strong><br>&#8377 12000 &nbsp <a class="txt">&#8377 15000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+      <div class="container my-5">
+        <div class="my-slider-two">
+          <div><img src="images/women fashion.jpg" class="img-fluid rounded" alt="Men">
+            <P class="text-center"><strong>Handcrafted Purse</strong><br>&#8377 13000 &nbsp <a class="txt">&#8377
+                15000</a>
+          </div>
+          <div><img src="images/women.jpg" class="img-fluid rounded" alt="Women">
+            <P class="text-center"><strong>Formal Shirt</strong><br>&#8377 5000 &nbsp <a class="txt">&#8377 7000</a>
+          </div>
+          <div><img src="images/womenblackonepiece.jpg" class="img-fluid rounded" alt="Kids">
+            <P class="text-center"><strong>Black Skirt</strong><br>&#8377 2000 &nbsp <a class="txt">&#8377 4000</a>
+          </div>
+          <div><img src="images/womenwhitedress.jpg" class="img-fluid rounded" alt="Men Fashion">
+            <P class="text-center"><strong>White Goun</strong><br>&#8377 7000 &nbsp <a class="txt">&#8377 9000</a>
+          </div>
+          <div><img src="images/womenpinkjacket.jpg" class="img-fluid rounded" alt="Women Fashion">
+            <P class="text-center"><strong>Pink Party Jacket</strong><br>&#8377 4000 &nbsp <a class="txt">&#8377
+                6000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-two-three">
+      <div class="container my-5">
+        <div class="my-slider-three">
+          <div><img src="images/kidsblueshirt.jpg" class="img-fluid rounded" alt="Men">
+            <P class="text-center"><strong>Blue shirt</strong><br>&#8377 5000 &nbsp <a class="txt">&#8377 8000</a>
+          </div>
+          <div><img src="images/kidscap.jpg" class="img-fluid rounded" alt="Women">
+            <P class="text-center"><strong>cotton Kids Cap</strong><br>&#8377 4000 &nbsp <a class="txt">&#8377 6000</a>
+          </div>
+          <div><img src="images/kidsminiskirt.jpg" class="img-fluid rounded" alt="Kids">
+            <P class="text-center"><strong>White Miniskirt</strong><br>&#8377 3000 &nbsp <a class="txt">&#8377 5000</a>
+          </div>
+          <div><img src="images/kidssocks.jpg" class="img-fluid rounded" alt="Men Fashion">
+            <P class="text-center"><strong>Combo(cap+socks)</strong><br>&#8377 4000 &nbsp <a class="txt">&#8377 6000</a>
+          </div>
+          <div><img src="images/kidspinkjacket.jpg" class="img-fluid rounded" alt="Women Fashion">
+            <P class="text-center"><strong>Pink Jacket</strong><br>&#8377 7000 &nbsp <a class="txt">&#8377 9000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-two-four">
+      <div class="container my-5">
+        <div class="my-slider-four">
+          <div><img src="images/fashionblackwatch.jpg" class="img-fluid rounded" alt="Men">
+            <P class="text-center"><strong>women Black Watch</strong><br>&#8377 7000 &nbsp <a class="txt">&#8377
+                9000</a>
+          </div>
+          <div><img src="images/fashionbrownpurse.jpg" class="img-fluid rounded" alt="Women">
+            <P class="text-center"><strong>Leather brown Purse</strong><br>&#8377 9999 &nbsp <a class="txt">&#8377
+                12000</a>
+          </div>
+          <div><img src="images/fashiongold bracelet.jpg" class="img-fluid rounded" alt="Kids">
+            <P class="text-center"><strong>Bracelet</strong><br>&#8377 2000 &nbsp <a class="txt">&#8377 4000</a>
+          </div>
+          <div><img src="images/fashionsunglasses.jpg" class="img-fluid rounded" alt="Men Fashion">
+            <P class="text-center"><strong>Sunglasses</strong><br>&#8377 3000 &nbsp <a class="txt">&#8377 5000</a>
+          </div>
+          <div><img src="images/fashionpendant.jpg" class="img-fluid rounded" alt="Women Fashion">
+            <P class="text-center"><strong>Green Pearl Pendant</strong><br>&#8377 5000 &nbsp <a class="txt">&#8377
+                7000</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      container: '.my-slider-one',
+      items: 3,
+      slideBy: 1,
+      autoplay: true,
+      controls: true,
+      nav: false,
+      gutter: 16,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  </script>
+  <script>
+    var slider = tns({
+      container: '.my-slider-two',
+      items: 3,
+      slideBy: 1,
+      autoplay: true,
+      controls: true,
+      nav: false,
+      gutter: 16,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  </script>
+  <script>
+    var slider = tns({
+      container: '.my-slider-three',
+      items: 3,
+      slideBy: 1,
+      autoplay: true,
+      controls: true,
+      nav: false,
+      gutter: 16,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  </script>
+  <script>
+    var slider = tns({
+      container: '.my-slider-four',
+      items: 3,
+      slideBy: 1,
+      autoplay: true,
+      controls: true,
+      nav: false,
+      gutter: 16,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  </script>
+  <div id="carouselExample" class="mt-4 p-4 carousel slide"
+    style="height: 450px;background-color: rgba(241, 231, 233, 0.712);">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center">
+        <div class="mt-4 fs-4  justify-content-center">
+          <h2 class="fst-italic fw-bold fs-1 ">Customer Testimonl</h2><br>
+          <p>"Great variety of products and the prices are reasonable. My kids <br>loved their new clothes!"
+          </p><br><br>
+          <div class="mt-auto align-items-center">
+            <img src="images/review1men.jpg" class="rounded-circle me-3" width="40" height="40">
+            <div>
+              <div class="fw-bold">Louise Kelly</div>
+              <small>Illustrator Designer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <div class="mt-4 fs-4  justify-content-center">
+          <h2 class="fst-italic fw-bold fs-1 ">Customer Testimonl</h2><br>
+          <p>"Absolutely love the quality and fit of the jacket I ordered!<br> Delivery was quick and the packaging was
+            beautiful."
+          </p><br><br>
+          <div class="mt-auto align-items-center">
+            <img src="images/reviewmen.jpg" class="rounded-circle me-3" width="40" height="40">
+            <div>
+              <div class="fw-bold">Amit Sharma</div>
+              <small> Model & Actor</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <div class="mt-4 fs-4  justify-content-center">
+          <h2 class="fst-italic fw-bold fs-1 ">Customer Testimonl</h2><br>
+          <p>"The customer support team was very helpful when I had questions about <br>my order."
+          </p><br><br>
+          <div class="mt-auto align-items-center">
+            <img src="images/reviwwomen.jpg" class="rounded-circle me-3" width="40" height="40">
+            <div>
+              <div class="fw-bold">Priya Mehta</div>
+              <small>Fashion Designer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next btn-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container my-5">
+    <h3 class="text-center">You May Like</h3>
+    <div class="my-slider-suggestion">
+      <div><img src="images/womenolive.jpg" class="img-fluid rounded" alt="Men">
+        <P class="text-center"><strong>olive goun</strong><br>&#8377 6000 &nbsp <a class="txt">&#8377 8000</a>
+      </div>
+      <div><img src="images/youmaylikesunglasses.jpg" class="img-fluid rounded" alt="Women">
+        <P class="text-center"><strong>Sunglasses</strong><br>&#8377 4000 &nbsp <a class="txt">&#8377 6000</a>
+      </div>
+      <div><img src="images/youmaylikesmallkidsofa.jpg" class="img-fluid rounded" alt="Kids">
+        <P class="text-center"><strong>Kids Fancy Sofa</strong><br>&#8377 7000 &nbsp <a class="txt">&#8377 9000</a>
+      </div>
+      <div><img src="images/youmaylikeBrownchappals.jpg" class="img-fluid rounded" alt="Men Fashion">
+        <P class="text-center"><strong>Brown Slippers ( pair of 2 )</strong><br>&#8377 2000 &nbsp <a class="txt">&#8377
+            4000</a>
+      </div>
+      <div><img src="images/youmaylikebrowngolves.jpg" class="img-fluid rounded" alt="Women Fashion">
+        <P class="text-center"><strong>Leather Gloves</strong><br>&#8377 5000 &nbsp <a class="txt">&#8377 7000</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var slider = tns({
+      container: '.my-slider-suggestion',
+      items: 3,
+      slideBy: 1,
+      autoplay: true,
+      controls: true,
+      nav: false,
+      gutter: 16,
+      responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 }
+      }
+    });
+  </script>
+  <div class="p-4 container-fluid" style="background-color: rgba(241, 231, 233, 0.712); ;">
+    <h3 class="text-center">Latest News</h3>
+    <div class="container">
+      <div class="row">
+        <div class="mt-4 col-lg-4 col-md-12 col-sm-12">
+          <div class="card bg-transparent" style="width: 100%;border: none;">
+            <img src="images/5Accessories.jpg" height="250">
+            <div class="card-body">
+              <p>Fashion Tips</p>
+              <a href="" class="custom-tab hovtab" style="text-decoration: none;">
+                <h3>5 Must-Have Accessories in ModernFashion
+                </h3>
+              </a><br>
+              <p>Upgrade your style with these essential accessories. Whether you're dressing up for a party or keeping
+                it
+                casual, these picks will add the perfect finishing touch to any outfit.
+              </p><br><br><a class="custom-tab hovtab" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 col-lg-4 col-md-12 col-sm-12">
+          <div class="card bg-transparent" style="width: 100%;border: none;">
+            <img src="images/fashiontrends.jpg" height="250">
+            <div class="card-body">
+              <p>Fashion Tips</p>
+              <a href="" class="custom-tab hovtab" style="text-decoration: none;">
+                <h3>Top 10 Fashion Trends for This Season
+                </h3>
+              </a><br>
+              <p>Stay ahead of the curve with our roundup of the hottest styles and must-have pieces for your wardrobe
+                this
+                season.
+              </p><br><br><br><a class="custom-tab hovtab" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 col-lg-4 col-md-12 col-sm-12">
+          <div class="card bg-transparent" style="width: 100%;border: none;">
+            <img src="images/sustainablefashion.jpg" height="250">
+            <div class="card-body">
+              <p>Fashion Tips</p>
+              <a href="" class="custom-tab hovtab" style="text-decoration: none;">
+                <h3>Why Sustainable Fashion Matters
+                </h3>
+              </a><br>
+              <p>Explore the benefits of eco-friendly clothing and how you can make a positive impact by shopping
+                sustainably.
+              </p><br><br><br><a class="custom-tab hovtab" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="mt-4 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="justify-content-center text-center" style="width: 15rem; border: none;">
+          <img src="/images/fast-delivery.png" class="card-img-top" alt="..." style="width: 5rem;">
+          <h4>Fast & Free delivery</h4>
+          <p class="card-text">Free delivery on all orders</p>
+        </div>
+      </div>
+      <div class="mt-4 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="justify-content-center text-center" style="width: 15rem; border: none;">
+          <img src="/images/payment-protection.png" class="card-img-top" alt="..." style="width: 5rem;">
+          <h4>Secured Payments</h4>
+          <p class="card-text">Free delivery on all orders</p>
+        </div>
+      </div>
+      <div class="mt-4 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="justify-content-center text-center" style="width: 18rem; border: none;">
+          <img src="/images/money-back.png" class="card-img-top" alt="..." style="width: 5rem;">
+          <h4>Money Back Guarentee</h4>
+          <p class="card-text">Free delivery on all orders</p>
+        </div>
+      </div>
+      <div class="mt-4 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="justify-content-center text-center" style="width: 15rem; border: none;">
+          <img src="/images/call-center.png" class="card-img-top" alt="..." style="width: 5rem;">
+          <h4>Online Support</h4>
+          <p class="card-text">Free delivery on all orders</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-4" style="background-color:black;color: white;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12" >
+          <h3>Subscriber Newsletter</h3>
+          <p >subscriber newsletter to get 5% on all products</p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+          <form action="#">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email" class="inlineform-label"></label>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12">
+          <button type="submit" class="btn btn-danger">Subscribe</button>
+        </div>
+        </form>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <ul class="navbar-nav list-group-horizontal justify-content-center" style="gap:20px">
+            <li class="nav-item">
+              <a class="nav-link">
+                <img src="images/lightfacebook.png" height="18px" width="18px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <img src="images/lightinstagram.png" height="18px" width="18px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <img src="images/lighttwitter.png" height="18px" width="18px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <img src="images/lightwhatsapp.png" height="18px" width="18px">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <img src="images/lightyoutube.PNG" height="18px" width="18px">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr width="100%" size="2" color="lightgray" style="margin: 0;">
+    </div>
+    <div class="mt-4 container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <a class="navbar-brand fs-3" href="#">
+            <img src="/images/lightlogo.png" alt="Logo" width="45" height="40" style="border-radius:60%;"
+              class=" d-inline-block align-text-top">&nbsp<strong>Capital</strong> Shop
+          </a>
+        </div>
+        <div class="mt-4 fs-6 col-lg-2 col-md-6 col-sm-12 ">
+          <h4>Shop Men</h4>
+          <ul class=" mt-4 navbar-nav" style="color: darkgray;">
+            <li>clothing fashion</li>
+            <li>Winter</li>
+            <li>Summer</li>
+            <li>Formal</li>
+            <li>causual</li>
+          </ul>
+        </div>
+        <div class="mt-4 col-lg-2 col-md-6 col-sm-12 ">
+          <h4>Shop Women</h4>
+          <ul class="mt-4 navbar-nav" style="color: darkgray;">
+            <li>clothing fashion</li>
+            <li>Winter</li>
+            <li>Summer</li>
+            <li>Formal</li>
+            <li>causual</li>
+          </ul>
+        </div>
+        <div class="mt-4 col-lg-2 col-md-6 col-sm-12 ">
+          <h4>Shop Kids</h4>
+          <ul class="mt-4 navbar-nav" style="color: darkgray;">
+            <li>clothing fashion</li>
+            <li>Winter</li>
+            <li>Summer</li>
+            <li>Formal</li>
+            <li>causual</li>
+          </ul>
+        </div>
+        <div class="mt-4 col-lg-2 col-md-6 col-sm-12 ">
+          <h4>Quick access</h4>
+          <ul class="mt-4 navbar-nav" style="color: darkgray;">
+            <li>Track Your Order</li>
+            <li>Support</li>
+            <li>FAQ</li>
+            <li>carrier</li>
+            <li>About</li>
+            <li><a href="contact.html" class="hovtab fotteratag">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

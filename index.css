@@ -1,0 +1,125 @@
+.image-overlay-text {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(5) brightness(0.3);
+}
+.tns-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: static;
+  margin-right: 0;
+  padding-right: 0;
+}
+.tns-controls button {
+  position: relative;
+  background: #212529;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 10px 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  cursor: pointer;
+  color: transparent;
+}
+.tns-controls button:focus {
+  outline: 2px solid #e50914;
+}
+.tns-controls button:first-child::after {
+  content: "←";
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tns-controls button:last-child::after {
+  content: "→";
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tns-controls button span,
+.tns-controls button::before {
+  display: none !important;
+}
+.tns-controls button:hover,
+.tns-controls button:focus {
+  background: #e50914;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(229,9,20,0.15);
+  font-size: medium;
+}
+.tns-controls button:hover::after,
+.tns-controls button:focus::after {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+button[data-action="stop"],
+button[data-action="start"] {
+  display: none !important;
+}
+.custom-tab {
+  color: black !important;
+  
+}
+.custom-tab.active {
+  color: red !important;
+}
+.hovtab:hover {
+  color: red !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.txt {
+  font-size: 1rem;
+  color: #a59c9cd0;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: line-through;
+}
+.anchortag{
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+.bor{
+  border-right: 2px solid darkgray;
+}
+.backcolor{
+background-color: rgba(241, 231, 233, 0.712);
+}
+.darkgray{
+  color: darkgray;
+}
+.fotteratag{
+  text-decoration: none;
+  color: darkgray;
+}
